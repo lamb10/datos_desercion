@@ -1,0 +1,55 @@
+/* Estilo del formulario */
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Estilo del título (centrado) */
+h1 {
+    text-align: center;
+    background-color: #c9ffcd; /* Color de fondo verde claro */
+    padding: 10px; /* Añadir espacio alrededor del título */
+    border-radius: 5px;
+}
+
+/* Estilo de las etiquetas */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilo del botón de envío */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Estilo del resultado de la predicción (centrado) */
+p {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Fondo verde claro para toda la página */
+body {
+    background-color: #4fdf58; /* Color de fondo verde claro */
+}

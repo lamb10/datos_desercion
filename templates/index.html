@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predicción de Deserción Estudiantil</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+    <h1>Predicción de Deserción Estudiantil</h1>
+    <form action="/predict" method="post">
+        <label for="estrato">Estrato:</label>
+        <input type="text" name="estrato"><br><br>
+        <label for="edad">Edad:</label>
+        <input type="text" name="edad"><br><br>
+        <label for="genero">Género:</label>
+        <select name="genero">
+            <option value="1">Masculino</option>
+            <option value="0">Femenino</option>
+        </select><br><br>
+        <label for="total_materias_perdidas">Total de materias perdidas:</label>
+        <input type="text" name="total_materias_perdidas"><br><br>
+        <label for="ult_promedio_acad">Último promedio académico:</label>
+        <input type="text" name="ult_promedio_acad"><br><br>
+        <input type="submit" value="Predecir">
+    </form>
+    
+    {% if prediction_result %}
+    <p>Resultado de la predicción: {{ prediction_result }}</p>
+    {% endif %}
+</body>
+</html>
+
